@@ -23,7 +23,7 @@ BEGIN
             'ORDSYS','ORDPLUGINS','ORDDATA','ORACLE_OCM','OLAPSYS','OJVMSYS',
             'MGMT_VIEW','MDSYS','MDDATA','GSMUSER','GSMCATUSER','GSMADMIN_INTERNAL',
             'FLOWS_FILES','EXFSYS','DMSYS','DIP','DBSNMP','CTXSYS','AUDSYS',
-            'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS' );
+            'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS','SYS' );
 
     DBMS_OUTPUT.PUT_LINE('INSTANCE #'||MAIN);
     DBMS_OUTPUT.PUT_LINE(' Top 3 user SQL Ordered by average buffergets');
@@ -62,7 +62,7 @@ BEGIN
                                  'ORDSYS','ORDPLUGINS','ORDDATA','ORACLE_OCM','OLAPSYS','OJVMSYS',
                                  'MGMT_VIEW','MDSYS','MDDATA','GSMUSER','GSMCATUSER','GSMADMIN_INTERNAL',
                                  'FLOWS_FILES','EXFSYS','DMSYS','DIP','DBSNMP','CTXSYS','AUDSYS',
-                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS')
+                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS','SYS')
                                 AND SS.EXECUTIONS > L_AVG_EXEC(MAIN)*1.4
                              ORDER BY 3 DESC, 5 DESC
                            )
@@ -113,7 +113,7 @@ BEGIN
                                  'ORDSYS','ORDPLUGINS','ORDDATA','ORACLE_OCM','OLAPSYS','OJVMSYS',
                                  'MGMT_VIEW','MDSYS','MDDATA','GSMUSER','GSMCATUSER','GSMADMIN_INTERNAL',
                                  'FLOWS_FILES','EXFSYS','DMSYS','DIP','DBSNMP','CTXSYS','AUDSYS',
-                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS')
+                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS','SYS')
                                 AND SS.EXECUTIONS > L_AVG_EXEC(MAIN)*1.4
                              ORDER BY 3 DESC, 5 DESC
                            )
@@ -164,7 +164,7 @@ BEGIN
                                  'ORDSYS','ORDPLUGINS','ORDDATA','ORACLE_OCM','OLAPSYS','OJVMSYS',
                                  'MGMT_VIEW','MDSYS','MDDATA','GSMUSER','GSMCATUSER','GSMADMIN_INTERNAL',
                                  'FLOWS_FILES','EXFSYS','DMSYS','DIP','DBSNMP','CTXSYS','AUDSYS',
-                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS')
+                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS','SYS')
                                 AND SS.EXECUTIONS > L_AVG_EXEC(MAIN)*1.4
                              ORDER BY 3 DESC, 5 DESC
                            )
@@ -217,7 +217,7 @@ BEGIN
                                  'ORDSYS','ORDPLUGINS','ORDDATA','ORACLE_OCM','OLAPSYS','OJVMSYS',
                                  'MGMT_VIEW','MDSYS','MDDATA','GSMUSER','GSMCATUSER','GSMADMIN_INTERNAL',
                                  'FLOWS_FILES','EXFSYS','DMSYS','DIP','DBSNMP','CTXSYS','AUDSYS',
-                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS')
+                                 'APPQOSSYS','APEX_PUBLIC_USER','APEX_030200','ANONYMOUS','SYS')
                              ORDER BY 3 DESC
                            )
                      WHERE ROWNUM < 4
