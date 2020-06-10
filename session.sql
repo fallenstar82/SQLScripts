@@ -6,11 +6,11 @@ COL EVENT FOR A40
 COL OBJECT_NAME FOR A35
 COL OBJECT_TYPE FOR A15
 COL TX_STATUS FOR A10
-SELECT LPAD(' ',2*(LEVEL-1),'-')||
-       S.USERNAME||'('||
-       S.SID||','||
-       S.SERIAL#||') Instance - '||S.INST_ID SESS_INFO,
-       EVENT,
+SELECT S.INST_ID,
+       S.SID,
+       S.SERIAL#,
+       S.USERNAME,
+       S.EVENT,
        S.STATUS SESS_STATUS,
        S.SQL_ID,
        S.BLOCKING_INSTANCE,
